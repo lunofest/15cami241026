@@ -103,7 +103,7 @@ audio_elemento.addEventListener('error', () => {
 // ----------------------- temporizador ---------------------------------
 // Configura aquí la fecha objetivo usando el formato de texto en inglés
 // Ejemplo: "Month Day, Year HH:MM:SS" -> "July 1, 2026 22:00:00"
-const fecha_objetivo = new Date("october 24, 2026 22:30:00").getTime();
+const fecha_objetivo = new Date("october 24, 2026 22:00:00").getTime();
 
 const actualizar_temporizador = () => {
     const ahora = new Date().getTime();
