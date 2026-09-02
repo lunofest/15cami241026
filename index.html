@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Cami" />
+    <meta property="og:description"
+        content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+
+    <meta property="og:image" content="https://lunofest.github.io/15cami241026/assets/imagenes/miniatura.png" />
+    <meta property="og:url" content="https://lunofest.github.io/15cami241026/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css?v48">
+    <link rel="stylesheet" href="css/normalize.css?v48">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="js/cache.js"></script>
+    <script src="js/service-worker.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <title>Mis 15 años</title>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+
+
+        <section class="musica">
+            <h2 class="musica_texto" id="titulo_estado">Toca play para reproducir la canción</h2>
+
+            <div class="musica_barra_contenedor">
+                <input type="range" class="musica_barra" id="barra_progreso" value="0" min="0" max="100">
+            </div>
+
+            <div class="musica_controles">
+
+                <button class="musica_boton" id="btn_anterior">
+                    <svg class="musica_icono" viewBox="0 0 24 24">
+                        <path d="M11 19V5l-11 7 11 7zm0-14v14l11-7-11-7z" style="display:none;" />
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+                    </svg>
+                </button>
+
+                <button class="musica_boton musica_boton_play" id="btn_play">
+                    <svg class="musica_icono" id="icono_play" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    <svg class="musica_icono" id="icono_pause" viewBox="0 0 24 24" style="display: none;">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                </button>
+
+                <button class="musica_boton" id="btn_siguiente">
+                    <svg class="musica_icono" viewBox="0 0 24 24">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <audio id="audio_elemento" src="assets/musica.mp3"></audio>
+        </section>
+    </header>
+
+    <main>
+
+        <img src="assets/imagenes/vectorTOP.webp" class="name__img" alt="">
+
+        <video src="assets/body.mp4" class="video" autoplay muted loop playsinline></video>
+
+        <section class="frase">
+
+            <img class="frase__star" src="assets/imagenes/star.webp" alt="">
+
+            <h5 class="frase__paragraph">
+                "Hay momentos en la vida que son irrepetibles...pero compartirlos con las personas que mas quieres los
+                vuelve inolvidables ."
+            </h5>
+
+        </section>
+
+
+        <section class="section_fecha">
+            <h2 class="section_fecha_mes">OCTUBRE</h2>
+            <div class="section_fecha_contenedor">
+                <div class="section_fecha_bloque">
+                    <div class="section_fecha_lineas"></div>
+                    <span class="section_fecha_texto">DOMINGO</span>
+                    <div class="section_fecha_lineas"></div>
+                </div>
+
+                <div class="section_fecha_numero">24</div>
+
+                <div class="section_fecha_bloque">
+                    <div class="section_fecha_lineas"></div>
+                    <span class="section_fecha_texto">2026</span>
+                    <div class="section_fecha_lineas"></div>
+                </div>
+            </div>
+        </section>
+
+        <section style="display: none;" class="contenedor donde">
+            <img class="contenedor__icon" src="assets/imagenes/iconos/fiesta.webp" alt="">
+            <h3 class="contenedor__title">ITINERARIO</h3>
+            <h5 class="contenedor__direccion">Fecha: 24 de Octubre</h5>
+            <h5 class="contenedor__hora">Ingreso de invitados: 22:30hs</h5>
+            <h5 class="contenedor__hora">Tu ingreso: 23:00hs</h5>
+            <h5 class="contenedor__hora">Cena: 00:00hs</h5>
+            <h5 class="contenedor__hora">Inicio del baile: 01:00hs</h5>
+            <h5 class="contenedor__hora">Fin de la fiesta: 06:00hs</h5>
+        </section>
+
+
+        <section class="temporizador">
+
+            <img class="temporizador__star" src="assets/imagenes/star.webp" alt="">
+            <img class="temporizador__star2" src="assets/imagenes/star.webp" alt="">
+
+            <div class="temporizador_ola temporizador_ola_top">
+                <svg class="temporizador_ola_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path class="temporizador_ola_relleno"
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+
+            <h2 class="temporizador_titulo">Faltan</h2>
+
+            <div class="temporizador_marco">
+                <div class="temporizador_marco_esquinas"></div>
+
+                <div class="temporizador_bloque">
+                    <span class="temporizador_numero" id="dias">00</span>
+                    <span class="temporizador_etiqueta">DÍAS</span>
+                </div>
+
+                <div class="temporizador_separador">:</div>
+
+                <div class="temporizador_bloque">
+                    <span class="temporizador_numero" id="horas">00</span>
+                    <span class="temporizador_etiqueta">HORAS</span>
+                </div>
+
+                <div class="temporizador_separador">:</div>
+
+                <div class="temporizador_bloque">
+                    <span class="temporizador_numero temporizador_numero_destacado" id="minutos">00</span>
+                    <span class="temporizador_etiqueta">MINUTOS</span>
+                </div>
+
+
+            </div>
+
+            <div class="temporizador_ola temporizador_ola_bottom">
+                <svg class="temporizador_ola_svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path class="temporizador_ola_relleno"
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+
+        </section>
+
+
+        <section class="fotos">
+            <h3 class=" fotos__title">Book de fotos</h3>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/uno.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/dos.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/tres.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/cuatro.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/cinco.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/seis.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/siete.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/ocho.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/imagenes/fotos/nueve.webp" />
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="contenedor donde" style="position: relative;">
+            <img src="assets/imagenes/star.webp"
+                style="position: absolute; top: -40px; left: -40px; width: 120px; pointer-events: none;" alt="">
+            <img class="contenedor__icon" src="assets/imagenes/iconos/iglesia.webp" alt="">
+            <h3 class="contenedor__title">MISA</h3>
+            <h5 class="contenedor__direccion">Iglesia Catedral <br>24 de Septiembre 420, San Miguel de Tucumán</h5>
+            <h5 class="contenedor__hora">19 de Octubre <br> 20:30hs</h5>
+            <a class="contenedor__button" href="https://maps.app.goo.gl/6bfTcNRvpqL2vud46">Ver ubicación</a>
+
+        </section>
+
+
+        <section class="contenedor donde" style="position: relative;">
+            <img src="assets/imagenes/star.webp"
+                style="position: absolute; bottom: -40px; right: -40px; width: 120px; pointer-events: none;" alt="">
+            <img class="contenedor__icon" src="assets/imagenes/iconos/fiesta.webp" alt="">
+            <h3 class="contenedor__title">Celebración</h3>
+            <h5 class="contenedor__direccion">Canzonieri Eventos <br>Bolivia 725</h5>
+            <h5 class="contenedor__hora">24 de Octubre <br> 22:30Hs.</h5>
+            <a class="contenedor__button" href="https://maps.app.goo.gl/M1K4yAV8q8LWpCE59">Ver ubicación</a>
+
+        </section>
+
+
+        <section class="contenedor dresscode" style="position: relative;">
+            <img src="assets/imagenes/star.webp"
+                style="position: absolute; top: -40px; left: -40px; width: 120px; pointer-events: none;" alt="">
+            <img class="contenedor__icon" src="assets/imagenes/iconos/drescode.webp" alt="">
+            <h3 class="contenedor__title">DRESSCODE: <br>Elegante</h3>
+            <h5 class="contenedor__direccion">COLORES RESERVADOS PARA LA QUINCEAÑERA: BLANCO, PLATEADO</h5>
+
+            <!-- <div class="contenedor__colores">
+                <div class="contenedores__item"></div>
+                <div class="contenedores__item contenedores__item2"></div>
+            </div> -->
+
+            <button class="contenedor__button" id="openLightbox">Ver ejemplo</button>
+
+
+        </section>
+
+        <section class="contenedor playlist" style="position: relative;">
+            <img src="assets/imagenes/star.webp"
+                style="position: absolute; bottom: -40px; left: -40px; width: 120px; pointer-events: none;" alt="">
+            <img class="contenedor__icon" src="assets/imagenes/iconos/musica.webp" alt="">
+            <h3 class="contenedor__title">¿QUÉ CANCION NO PUEDE FALTAR EN MI FIESTA?</h3>
+
+            <div class="contenedor__input">
+                <input class="input__item" type="text" placeholder="tu nombre aqui">
+                <input class="input__item" type="text" placeholder="tu canción recomendada">
+            </div>
+
+            <button class="contenedor__button">Enviar recomendación</button>
+
+
+        </section>
+
+        <section class="contenedor regalos" style="position: relative;">
+            <img src="assets/imagenes/star.webp"
+                style="position: absolute; bottom: -40px; right: -40px; width: 120px; pointer-events: none;" alt="">
+            <img class="contenedor__icon" src="assets/imagenes/iconos/regalos.webp" alt="">
+            <h3 class="contenedor__title">EL MEJOR REGALO ES TU PRESENCIA</h3>
+            <h5 class="contenedor__direccion contenedor__direccion2">"Quiero que sepas que tu presencia es lo más
+                importante en mi fiesta y si deseas hacerme un presente, podrás dejarlo en mi mesa de regalos,
+                o también podés hacerlo por transferencia a mi cuenta...
+                y recuerda: <br> ¡Tu cariño es el mejor regalo que puedo recibir!"
+            </h5>
+
+            <div class="datos">
+                <div class="datos__cuenta">
+                    <h5 class="datos__banco alias">camilacampero.</h5>
+                    <button class="datos__button" id="alias">Copiar Alias</button>
+                </div>
+                <div class="datos__cuenta">
+                    <h5 class="datos__banco cbu">0000003100016294389767</h5>
+                    <button class="datos__button" id="cbu">Copiar Cbu</button>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section style="display: none;" class="album contenedor block glow" data-aos="flip-left">
+
+            <div class="album__container" id="albumDigital">
+
+                <img class="album__img" src="assets/imagenes/iconos/album.webp" id="album" alt="">
+                <h3 class="title title--album">MI ÁLBUM COMPARTIDO</h3>
+
+                <h3 class="parrafo parrafo--album ">
+                    Quiero inmortalizar este maravilloso momento, guardando fotos y para ello tengo mi álbum
+                    compartido, ayudame subiendo tus mejores capturas! <br> <br>
+
+                </h3>
+                <a class="contenedor__button" href="https://photos.app.goo.gl/962V1E5Mq4iWYiMf6">Compartir fotos</a>
+                <!-- <h3 class="parrafo__album parrafo--album"> Ó podés compartir tus fotos y videos de la fiesta en instagram y etiquétame
+                </h3>
+
+
+                <a class=" boton__cta album__insta" href="#albumDigital">
+                    <img class="album__icon" src="assets/vectores/insta.svg" alt="">@Tu_Instagram</a> -->
+
+                <!-- ----- hastag ------- -->
+
+                <!-- <h4 class="parrafo parrafo__hashtag">#AquiHashtag</h4> -->
+
+            </div>
+
+
+        </section>
+
+
+        <section class="confirmacion">
+            <h4 class="confirmacion__title">Por favor confirma tu presencia hasta el día 5 de Octubre del 2026 </h4>
+
+            <div class="confirmacion__asistencia">
+                <button class="asistencia__button" id="siAsistire">Si asistiré</button>
+                <button class="asistencia__button" id="noAsistire">No asistiré</button>
+            </div>
+
+            <div class="confirmacion__inputs">
+                <input type="text" class="confirmacion__input" id="nombreInput" placeholder="Escribe tu nombre aquí...">
+            </div>
+
+            <div class="confirmacion__inputs">
+                <input type="text" class="confirmacion__input" id="mensajeOpcional"
+                    placeholder="Deja un mensaje opcional...">
+            </div>
+
+            <button class="contenedor__button" id="btnConfirmarAsistencia">Confirmar Presencia</button>
+            <button style="display: none;" class="contenedor__button" id="btnConfirmarAsistencia2">Confirmar a
+                Marta</button>
+
+        </section>
+
+        <section class="frase">
+            <h5 class="frase__paragraph">
+                "El brillo de este dia vive en mi corazón, pero se ilumina aún más con tu presencia."
+            </h5>
+        </section>
+    </main>
+
+
+
+
+    <footer class="footer__final1">
+        <div class="footer__inner1">
+            <div class="footer__brand1">
+                <p class="footer__text1">
+                    Página creada por <strong>Luno Digitales</strong>
+                    para los 15 años de <strong>Cami</strong>.<br>
+                    Todos los derechos reservados. <br>Visítanos en:
+                </p>
+
+            </div>
+
+
+            <a class="footer__site1" href="https://www.luno.net.ar" target="_blank" rel="noopener">www.luno.net.ar</a>
+            <div class="footer__social3">
+                <p class="footer__follow1">Síguenos en nuestras redes</p>
+                <a class="icon-link1"
+                    href="https://www.instagram.com/lunodigitales?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"
+                            fill="none" />
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+                        <circle cx="18.2" cy="5.8" r="0.7" fill="currentColor" />
+                    </svg>
+                </a>
+                <a class="icon-link1" href="https://www.facebook.com/profile.php?id=61581720891655" target="_blank"
+                    rel="noopener" aria-label="Facebook de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <style>
+        /* ///////////////// footer /////////////////////// */
+
+
+        .footer__final1 {
+            background: linear-gradient(180deg, #939393 0%, #000000 100%);
+            color: #fff;
+            padding: 1.5em 0;
+
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-size: 14px;
+            width: clamp(100px, 100%, 1800px);
+            text-align: center;
+            margin: 0 auto 0;
+        }
+
+        .footer__inner1 {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .footer__text1 {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .footer__text1 strong {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .footer__site1 {
+            display: inline-block;
+            margin-top: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .footer__site1:hover {
+            text-decoration: underline;
+        }
+
+        .footer__social3 {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .footer__follow1 {
+            margin: 0;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .footer__final1 .icon-link1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .footer__final1 .icon-link1 svg {
+            width: 28px !important;
+            height: 28px !important;
+            display: block;
+            margin: 0;
+        }
+
+        .footer__final1 .icon-link1:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox__content">
+            <button id="closeLightbox" class="lightbox__close">&times;</button>
+            <img src="assets/imagenes/dresscode.webp" alt="Ejemplo Dresscode" class="lightbox__img">
+        </div>
+    </div>
+
+    <script>
+        const btnOpen = document.getElementById('openLightbox');
+        const lightbox = document.getElementById('lightbox');
+        const btnClose = document.getElementById('closeLightbox');
+
+        if (btnOpen && lightbox && btnClose) {
+            btnOpen.addEventListener('click', () => {
+                lightbox.classList.add('active');
+            });
+
+            btnClose.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                }
+            });
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js?v48"></script>
+
+</body>
+
+</html>
